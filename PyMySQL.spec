@@ -4,7 +4,7 @@
 #
 Name     : PyMySQL
 Version  : 0.6.7
-Release  : 6
+Release  : 7
 URL      : https://pypi.python.org/packages/source/P/PyMySQL/PyMySQL-0.6.7.tar.gz
 Source0  : https://pypi.python.org/packages/source/P/PyMySQL/PyMySQL-0.6.7.tar.gz
 Summary  : Pure-Python MySQL Driver
