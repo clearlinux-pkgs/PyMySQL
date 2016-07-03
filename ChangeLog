@@ -1,5 +1,37 @@
 # Changes
 
+## 0.7.5
+
+Release date: 2016-06-28
+
+* Fix exception raised while importing when getpwuid() fails (#472)
+* SSCursor supports LOAD DATA LOCAL INFILE (#473)
+* Fix encoding error happen for JSON type (#477)
+* Fix test fail on Python 2.7 and MySQL 5.7 (#478)
+
+## 0.7.4
+
+Release date: 2016-05-26
+
+* Fix AttributeError may happen while Connection.__del__ (#463)
+* Fix SyntaxError in test_cursor. (#464)
+* frozenset support for query value. (#461)
+* Start using readthedocs.io
+
+## 0.7.3
+
+Release date: 2016-05-19
+
+* Add read_timeout and write_timeout option.
+* Support serialization customization by `conv` option.
+* Unknown type is converted by `str()`, for MySQLdb compatibility.
+* Support '%%' in `Cursor.executemany()`
+* Support REPLACE statement in `Cursor.executemany()`
+* Fix handling incomplete row caused by 'SHOW SLAVE HOSTS'.
+* Fix decode error when use_unicode=False on PY3
+* Fix port option in my.cnf file is ignored.
+
+
 ## 0.7.2
 
 Release date: 2016-02-24

@@ -1,5 +1,5 @@
 PKG_NAME := PyMySQL
-URL := https://pypi.python.org/packages/source/P/PyMySQL/PyMySQL-0.7.2.tar.gz
+URL := http://pypi.debian.net/PyMySQL/PyMySQL-0.7.5.tar.gz
 ARCHIVES :=
 
 include ../common/Makefile.common
