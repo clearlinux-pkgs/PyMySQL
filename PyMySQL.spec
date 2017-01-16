@@ -4,7 +4,7 @@
 #
 Name     : PyMySQL
 Version  : 0.7.9
-Release  : 18
+Release  : 19
 URL      : http://pypi.debian.net/PyMySQL/PyMySQL-0.7.9.tar.gz
 Source0  : http://pypi.debian.net/PyMySQL/PyMySQL-0.7.9.tar.gz
 Summary  : Pure Python MySQL Driver
@@ -42,13 +42,15 @@ python components for the PyMySQL package.
 
 %build
 export LANG=C
+export SOURCE_DATE_EPOCH=1484565058
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
+export SOURCE_DATE_EPOCH=1484565058
 rm -rf %{buildroot}
-python2 -tt setup.py build -b py2 install --root=%{buildroot}
-python3 -tt setup.py build -b py3 install --root=%{buildroot}
+python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
+python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
 
 %files
 %defattr(-,root,root,-)
