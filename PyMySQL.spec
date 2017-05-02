@@ -4,7 +4,7 @@
 #
 Name     : PyMySQL
 Version  : 0.7.11
-Release  : 21
+Release  : 22
 URL      : https://pypi.debian.net/PyMySQL/PyMySQL-0.7.11.tar.gz
 Source0  : https://pypi.debian.net/PyMySQL/PyMySQL-0.7.11.tar.gz
 Summary  : Pure Python MySQL Driver
