@@ -4,7 +4,7 @@
 #
 Name     : PyMySQL
 Version  : 0.9.1
-Release  : 29
+Release  : 30
 URL      : https://github.com/PyMySQL/PyMySQL/archive/v0.9.1.tar.gz
 Source0  : https://github.com/PyMySQL/PyMySQL/archive/v0.9.1.tar.gz
 Summary  : No detailed summary available
@@ -66,7 +66,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1531155880
+export SOURCE_DATE_EPOCH=1531168434
 find -name "*pyx" | xargs touch ||:
 python3 setup.py build -b py3
 
@@ -91,4 +91,5 @@ echo ----[ mark ]----
 
 %files python3
 %defattr(-,root,root,-)
+%exclude /usr/lib/python3.7/site-packages/tests/__init__.py
 /usr/lib/python3*/*
