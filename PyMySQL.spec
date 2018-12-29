@@ -4,7 +4,7 @@
 #
 Name     : PyMySQL
 Version  : 0.9.2
-Release  : 33
+Release  : 34
 URL      : https://github.com/PyMySQL/PyMySQL/archive/v0.9.2.tar.gz
 Source0  : https://github.com/PyMySQL/PyMySQL/archive/v0.9.2.tar.gz
 Summary  : No detailed summary available
