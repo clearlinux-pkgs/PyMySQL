@@ -4,7 +4,7 @@
 #
 Name     : PyMySQL
 Version  : 0.9.3
-Release  : 45
+Release  : 46
 URL      : https://github.com/PyMySQL/PyMySQL/archive/v0.9.3/PyMySQL-0.9.3.tar.gz
 Source0  : https://github.com/PyMySQL/PyMySQL/archive/v0.9.3/PyMySQL-0.9.3.tar.gz
 Summary  : Pure Python MySQL Driver
