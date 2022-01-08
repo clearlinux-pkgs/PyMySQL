@@ -4,7 +4,7 @@
 #
 Name     : PyMySQL
 Version  : 0.9.3
-Release  : 56
+Release  : 57
 URL      : https://github.com/PyMySQL/PyMySQL/archive/v0.9.3/PyMySQL-0.9.3.tar.gz
 Source0  : https://github.com/PyMySQL/PyMySQL/archive/v0.9.3/PyMySQL-0.9.3.tar.gz
 Summary  : Pure Python MySQL Driver
@@ -13,15 +13,14 @@ License  : MIT
 Requires: PyMySQL-license = %{version}-%{release}
 Requires: PyMySQL-python = %{version}-%{release}
 Requires: PyMySQL-python3 = %{version}-%{release}
-Requires: cryptography
 BuildRequires : buildreq-distutils3
-BuildRequires : cryptography
 BuildRequires : mariadb-dev
-BuildRequires : pluggy
-BuildRequires : py-python
-BuildRequires : pytest
-BuildRequires : tox
-BuildRequires : virtualenv
+BuildRequires : pypi(cryptography)
+BuildRequires : pypi(py)
+BuildRequires : pypi-pluggy
+BuildRequires : pypi-pytest
+BuildRequires : pypi-tox
+BuildRequires : pypi-virtualenv
 
 %description
 .. image:: https://readthedocs.org/projects/pymysql/badge/?version=latest
@@ -51,6 +50,7 @@ Summary: python3 components for the PyMySQL package.
 Group: Default
 Requires: python3-core
 Provides: pypi(pymysql)
+Requires: pypi(cryptography)
 
 %description python3
 python3 components for the PyMySQL package.
@@ -65,7 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1603400679
+export SOURCE_DATE_EPOCH=1641680244
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
